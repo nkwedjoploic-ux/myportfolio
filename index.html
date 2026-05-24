@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top">
+        <!-- Remplace le texte par ton nom -->
+        <span class="brand__name">NKWEDJOP WOKAP LOIC</span>
+      </a>
+
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="nav__link" href="#projets">Projets</a>
+        <a class="nav__link" href="#competences">Compétences</a>
+        <a class="nav__link" href="#apropos">À propos</a>
+      </nav>
+
+      <a class="btn btn--ghost" href="http://Wa.me/+237674653456">Me contacter</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content" style="padding-bottom: 8px;">
+          <p class="kicker">Développeur Web / Étudiant</p>
+          <h1 class="title">Je conçois des sites <span class="accent">propres</span> et performants.</h1>
+          <p class="lead">
+            <!-- Mets ici une phrase courte qui te décrit -->
+            Passionné par le front-end, je crée des interfaces claires et responsives.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn" href="#projets">Voir mes projets</a>
+            <a class="btn btn--ghost" href="#apropos">En savoir plus</a>
+          </div>
+
+          <ul class="hero__meta" aria-label="Infos rapides">
+            <li><strong>Localisation</strong> <span>Douala</span></li>
+            <li><strong>Disponibilité</strong> <span>Freelance / Études</span></li>
+            <li><strong>Stack</strong> <span>HTML • CSS • PYTHON</span></li>
+          </ul>
+        </div>
+
+        <figure class="hero__card" aria-label="Carte de présentation">
+          <!-- Optionnel : ajoute une image dans assets/images/profile.jpg -->
+          <div class="avatar" role="img" aria-label="Photo de profil" >
+            <!-- Mets ton image ici (ex: assets/images/profile.jpg) -->
+            <img class="avatar__img" src="img.jpg" alt="Photo de profil"/>
+          </div>
+          <figcaption class="hero__cardText">
+            <p class="hero__cardDesc">j'aime m'exercer sur la creation des interfaces web responsive et ainsi que sur les framework python.</p>
+            <div class="chips" aria-label="Technos">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">PYTHON</span>
+              <span class="chip"> FLASK</span>
+              <span class="chip">DJANGO</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">PROJETS</h2>
+          <p class="section__subtitle">Quelques réalisations (remplace-les par les tiennes).</p>
+        </div>
+
+        <div class="grid grid--3">
+          <article class="card">
+            <div class="card__media">
+              <!-- Optionnel : image dans assets/images/project1.jpg -->
+              <div class="card__mediaInner">Projet 1</div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title"> art-shop</h3>
+              <p class="card__desc"><a href="https://art-shop-rag8.onrender.com"> art-shop.com</a></p>
+              <ul class="card__list">
+                <li>Technos : HTML/CSS</li>
+                <li>Design : responsive</li>
+              </ul>
+              <a class="card__link" href="http://Wa.me/+237674653456">Demander les détails</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__media">
+              <div class="card__mediaInner">Projet 2</div>
+            </div>
+            <div class="card__body">
+              <h3 class="card__title">godeyes</h3>
+              <p class="card__desc">Description courte : Systeme de publication des alerte et incidents securitaire.</p>
+              <ul class="card__list">
+                <li>Technos : HTML/CSS/PYTHON/FLASK</li>
+                <li>Accessibilité : bonnes pratiques</li>
+              </ul>
+              <a class="card__link" href="http://Wa.me/+237674653456">Demander les détails</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section section--alt" id="competences">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Compétences</h2>
+          <p class="section__subtitle">Remplace les niveaux si besoin.</p>
+        </div>
+
+        <div class="skills">
+          <div class="skill">
+            <div class="skill__top"><span>HTML</span><span>90%</span></div>
+            <div class="bar"><span class="bar__fill" style="width: 90%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>CSS</span><span>85%</span></div>
+            <div class="bar"><span class="bar__fill" style="width: 85%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>Python</span><span>80%</span></div>
+            <div class="bar"><span class="bar__fill" style="width: 80%"></span></div>
+          </div>
+          <div class="skill">
+            <div class="skill__top"><span>FLASK / DJANGO</span><span>75%</span></div>
+            <div class="bar"><span class="bar__fill" style="width: 75%"></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="section" id="apropos">
+      <div class="container">
+        <div class="two-cols">
+          <div>
+            <h2 class="section__title">À propos</h2>
+            <p class="section__subtitle">Qui tu es, et ce que tu cherches.</p>
+
+            <div class="prose">
+              <p>
+                <!-- Remplace par ton texte -->
+                Je suis <strong>Nkwedjop Wokap Franck Loic</strong>, etudiant en deuxieme année genie informatique  j’apprends  et je construis des interfaces modernes.
+                Mon objectif : créer des sites clairs, performants et agréables à utiliser.
+              </p>
+              <p>
+                Je m’intéresse au <strong>design</strong> du site , à la<strong> structure</strong> et à la <strong> lisibilité </strong> des pages du site .
+              </p>
+            </div>
+          </div>
+
+          <aside class="aside">
+            <h3 class="aside__title">Infos</h3>
+            <ul class="aside__list">
+              <li><strong>Nom</strong> <span>Nkwedjop Wokap Franck Loic </span></li>
+              <li><strong>Email</strong> <span>nkwedjoploic@gmail.com</span></li>
+              <li><strong>Ville</strong> <span>Douala</span></li>
+              <li><strong>LinkedIn</strong> <span>nkwedjop wokap loic </span></li>
+            </ul>
+            <a class="btn btn--ghost btn--block" href="http://Wa.me/+237674653456">Envoyer un message</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">© <span id="year">2026</span>Nkwedjop Wokap Franck Loic. Tous droits réservés.</p>
+      <a class="footer__top" href="#top">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
